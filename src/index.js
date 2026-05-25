@@ -8,6 +8,8 @@ const ALLOWED_ORIGINS = [
     'http://localhost:8787',
     'http://127.0.0.1:4200',
     'http://127.0.0.1:8787',
+    'http://localhost:5500',
+    'http://127.0.0.1:5500',
     'https://prus-api2.burgas275.workers.dev',
     'https://checkpoint.imbcargo-montenegro.com',
 ];
@@ -28,6 +30,8 @@ function isLocalRequest(host) {
         host?.includes('127.0.0.1') ||
         host === 'localhost:8787' ||
         host === '127.0.0.1:8787' ||
+        host === 'localhost:5500' ||
+        host === '127.0.0.1:5500' ||
         host === 'localhost:4200' ||
         host === '127.0.0.1:4200';
 }
